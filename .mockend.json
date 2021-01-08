@@ -1,0 +1,7 @@
+{
+  "Todos": {
+    "title": "string",
+    "id": "int",
+    "completed": "boolean"
+  }
+}
