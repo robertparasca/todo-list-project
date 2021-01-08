@@ -1,5 +1,5 @@
 {
-  "Todos": {
+  "Todo": {
     "title": "string",
     "id": "int",
     "completed": "boolean"
