@@ -1,0 +1,24 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0087ca;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.todo:hover {
+  cursor: pointer;
+}
+
+.todo h2 {
+  margin-right: 16px;
+}
+
+.todo small {
+  font-size: 26px;
+}
+
+.todo.crossed h2 {
+  text-decoration: line-through;
+}
