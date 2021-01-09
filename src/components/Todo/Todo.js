@@ -1,18 +1,30 @@
 import React from "react";
 import "./Todo.css";
 
-export default function Todo({ todo, markTodoAsDone }) {
+export default function Todo({ todo, markTodoAsDone, deleteTodo }) {
   const classes = `todo ${todo.completed ? "crossed" : ""}`;
 
-  const onClick = () => {
-    const updatedTodo = { ...todo, isDone: !todo.completed };
+  const markDone = () => {
+    const updatedTodo = { ...todo, completed: !todo.completed };
     markTodoAsDone(updatedTodo);
   };
 
+  const removeTodo = () => {
+    deleteTodo(todo);
+  };
+
   return (
-    <div className={classes} onClick={onClick}>
-      <h2>{todo.title}</h2>
-      <small>{todo.completed ? "❤️" : "💔"}</small>
+    <div className='todo-container'>
+      <div>
+      <button onClick={removeTodo}>❌</button>
+      </div>
+      <div className={classes}>
+        <h2>{todo.description}</h2>
+        <small>{todo.completed ? "❤️" : "💔"}</small>
+      </div>
+      <div>
+        <button onClick={markDone}>{todo.completed ? '🔒' : '🔓'}</button>
+      </div>
     </div>
   );
 }

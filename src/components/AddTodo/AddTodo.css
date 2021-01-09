@@ -1,0 +1,31 @@
+.add-todo-container {
+  margin-bottom: 32px;
+}
+
+.form-item {
+  margin-bottom: 16px;
+}
+
+.form-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-item button {
+  font-size: 16px;
+  border: 1px solid #0087ca;
+  padding: 4px 16px;
+  border-radius: 10px;
+}
+
+.form-item button:hover {
+  background: #0087ca;
+  color: #ffffff;
+}
+
+.form-item label {
+  margin-right: 16px;
+}
+
+.form-item input {
+  padding: 4px;
+}

@@ -1,14 +1,18 @@
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
 .todo {
+  min-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #0087ca;
-  margin-bottom: 16px;
+  margin: 0 16px;
   border-radius: 10px;
-}
-
-.todo:hover {
-  cursor: pointer;
 }
 
 .todo h2 {
@@ -21,4 +25,18 @@
 
 .todo.crossed h2 {
   text-decoration: line-through;
+}
+
+button {
+  background: transparent;
+  border: none;
+  font-size: 40px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.disabled:hover {
+  cursor: disabled;
 }

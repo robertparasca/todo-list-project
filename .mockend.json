@@ -1,6 +1,6 @@
 {
   "Todo": {
-    "title": "string",
+    "description": "string",
     "id": "int",
     "completed": "boolean"
   }
