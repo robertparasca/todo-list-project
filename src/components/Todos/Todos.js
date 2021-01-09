@@ -84,8 +84,8 @@ export default function Todos() {
           <Todo
             todo={todo}
             key={todo.id}
-            markTodoAsDone={markTodoAsDone}
             deleteTodo={deleteTodo}
+            markTodoAsDone={markTodoAsDone}
           />
         ))
       ) : (
