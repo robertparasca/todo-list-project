@@ -79,14 +79,18 @@ export default function Todos() {
   return (
     <div className="todos">
       <AddTodo addTodo={addTodo} />
-      {todos.map((todo) => (
-        <Todo
-          todo={todo}
-          key={todo.id}
-          markTodoAsDone={markTodoAsDone}
-          deleteTodo={deleteTodo}
-        />
-      ))}
+      {todos.length ? (
+        todos.map((todo) => (
+          <Todo
+            todo={todo}
+            key={todo.id}
+            markTodoAsDone={markTodoAsDone}
+            deleteTodo={deleteTodo}
+          />
+        ))
+      ) : (
+        <h6>🤷‍♀️ Nothing to do 🤷‍♂️</h6>
+      )}
     </div>
   );
 }
